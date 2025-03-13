@@ -8,146 +8,170 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
 </head>
-<body class="bg-dark text-light">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+<body>
+    <nav class="navbar">
         <div class="container">
-            <a class="navbar-brand neon-text" href="index.html">GameReviews</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
+            <a class="logo neon-text" href="index.html">GameReviews</a>
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                <span class="menu-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="pages/action.html">Action</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="pages/rpg.html">RPG</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="pages/strategy.html">Strategy</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="pages/sports.html">Sports</a>
-                    </li>
+            <div class="nav-left">
+                <a class="logo neon-text" href="index.html">STORE</a>
+            </div>
+            <div class="nav-menu">
+                <ul class="nav-list">
+                    <li><a class="nav-link" href="pages/action.html">Action</a></li>
+                    <li><a class="nav-link" href="pages/rpg.html">RPG</a></li>
+                    <li><a class="nav-link" href="pages/strategy.html">Strategy</a></li>
+                    <li><a class="nav-link" href="pages/sports.html">Sports</a></li>
+                    <li><a class="nav-link" href="#">ABOUT</a></li>
+                    <li><a class="nav-link" href="#">CONTACT</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-
     <header class="hero-section">
-        <div class="container py-5">
-            <h1 class="display-4 gradient-text">Welcome to GameReviews</h1>
-            <p class="lead">Discover your next gaming adventure</p>
+        <div class="container">
+            <h1 class="title gradient-text">Welcome to GameReviews</h1>
+            <p class="subtitle">Discover your next gaming adventure</p>
         </div>
     </header>
-
-    <main class="container py-5">
-        <h2 class="mb-4 gradient-text">Game Categories</h2>
-        <div class="row g-4">
+    <main class="container">
+        <h2 class="section-title gradient-text">Game Categories</h2>
+        <div class="grid">
             <!-- Action Games -->
-            <div class="col-md-6 col-lg-3">
-                <div class="game-card">
-                    <img src="https://images.unsplash.com/photo-1486572788966-cfd3df1f5b42" class="card-img-top" alt="Action Games">
-                    <div class="card-body">
-                        <h5 class="card-title">Action Games</h5>
-                        <p class="card-text">Fast-paced adventures and intense combat</p>
-                        <a href="pages/action.html" class="btn btn-primary neon-button">Explore</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- RPG Games -->
-            <div class="col-md-6 col-lg-3">
-                <div class="game-card">
-                    <img src="https://images.unsplash.com/photo-1594652634010-275456c808d0" class="card-img-top" alt="RPG Games">
-                    <div class="card-body">
-                        <h5 class="card-title">RPG Games</h5>
-                        <p class="card-text">Epic stories and character development</p>
-                        <a href="pages/rpg.html" class="btn btn-primary neon-button">Explore</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Strategy Games -->
-            <div class="col-md-6 col-lg-3">
-                <div class="game-card">
-                    <img src="https://images.unsplash.com/photo-1540898824226-21f19654dcf1" class="card-img-top" alt="Strategy Games">
-                    <div class="card-body">
-                        <h5 class="card-title">Strategy Games</h5>
-                        <p class="card-text">Test your tactical thinking</p>
-                        <a href="pages/strategy.html" class="btn btn-primary neon-button">Explore</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Sports Games -->
-            <div class="col-md-6 col-lg-3">
-                <div class="game-card">
-                    <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420" class="card-img-top" alt="Sports Games">
-                    <div class="card-body">
-                        <h5 class="card-title">Sports Games</h5>
-                        <p class="card-text">Competitive sports action</p>
-                        <a href="pages/sports.html" class="btn btn-primary neon-button">Explore</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <section class="featured-games mt-5">
-            <h2 class="mb-4 gradient-text">Featured Games</h2>
-            <div class="row g-4">
-                <div class="col-md-6">
+            <div class="game-card">
+                <img src="https://images.unsplash.com/photo-1486572788966-cfd3df1f5b42" alt="Action Games">
+                <div class="card-content">
+                    <h5 class="card-title">Action Games</h5>
+                    <p class="card-text">Fast-paced adventures and intense combat</p>
+                    <a href="pages/action.html" class="button neon-button">Explore</a>
+        <section class="featured-section">
+            <div class="featured-main">
+                <div class="featured-game">
+                    <h2 class="section-title">Most Popular</h2>
                     <div class="game-card featured">
-                        <img src="https://images.unsplash.com/photo-1522069213448-443a614da9b6" class="card-img-top" alt="Cyberpunk 2077">
-                        <div class="card-body">
-                            <h5 class="card-title">Cyberpunk 2077</h5>
-                            <div class="rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="far fa-star"></i>
+                        <img src="https://images.unsplash.com/photo-1522069213448-443a614da9b6" alt="Featured Game">
+                        <div class="card-content">
+                            <div class="rating large">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="rating-text">5.0</span>
                             </div>
-                            <p class="card-text">Experience the future in this open-world RPG</p>
-                            <a href="games/cyberpunk.html" class="btn btn-primary neon-button">Read Reviews</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="game-card featured">
-                        <img src="https://images.unsplash.com/photo-1511213966740-24d719a0a814" class="card-img-top" alt="Elden Ring">
-                        <div class="card-body">
-                            <h5 class="card-title">Elden Ring</h5>
-                            <div class="rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <p class="card-text">Explore a vast fantasy world</p>
-                            <a href="games/elden-ring.html" class="btn btn-primary neon-button">Read Reviews</a>
+            </div>
+            <!-- RPG Games -->
+            <div class="game-card">
+                <img src="https://images.unsplash.com/photo-1594652634010-275456c808d0" alt="RPG Games">
+                <div class="card-content">
+                    <h5 class="card-title">RPG Games</h5>
+                    <p class="card-text">Epic stories and character development</p>
+                    <a href="pages/rpg.html" class="button neon-button">Explore</a>
+                </div>
+            </div>
+            <!-- Strategy Games -->
+            <div class="game-card">
+                <img src="https://images.unsplash.com/photo-1540898824226-21f19654dcf1" alt="Strategy Games">
+                <div class="card-content">
+                    <h5 class="card-title">Strategy Games</h5>
+                    <p class="card-text">Test your tactical thinking</p>
+                    <a href="pages/strategy.html" class="button neon-button">Explore</a>
+                </div>
+            </div>
+            <!-- Sports Games -->
+            <div class="game-card">
+                <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420" alt="Sports Games">
+                <div class="card-content">
+                    <h5 class="card-title">Sports Games</h5>
+                    <p class="card-text">Competitive sports action</p>
+                    <a href="pages/sports.html" class="button neon-button">Explore</a>
+                </div>
+            </div>
+        </div>
+        <section class="featured-games">
+            <h2 class="section-title gradient-text">Featured Games</h2>
+            <div class="featured-grid">
+                <div class="game-card featured">
+                    <img src="https://images.unsplash.com/photo-1522069213448-443a614da9b6" alt="Cyberpunk 2077">
+                    <div class="card-content">
+                        <h5 class="card-title">Cyberpunk 2077</h5>
+            <div class="featured-sidebar">
+                <h3>Featured Games</h3>
+                <div class="featured-grid">
+                    <div class="game-card small">
+                        <img src="https://images.unsplash.com/photo-1486572788966-cfd3df1f5b42" alt="Game 1">
+                        <div class="rating">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+-8
++2
+                            <span class="star">★</span>
+                            <span class="star empty">★</span>
+                        </div>
+                        <p class="card-text">Experience the future in this open-world RPG</p>
+                        <a href="games/cyberpunk.html" class="button neon-button">Read Reviews</a>
+                    </div>
+                </div>
+                <div class="game-card featured">
+                    <img src="https://images.unsplash.com/photo-1511213966740-24d719a0a814" alt="Elden Ring">
+                    <div class="card-content">
+                        <h5 class="card-title">Elden Ring</h5>
+                    <div class="game-card small">
+                        <img src="https://images.unsplash.com/photo-1511213966740-24d719a0a814" alt="Game 2">
+                        <div class="rating">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <p class="card-text">Explore a vast fantasy world</p>
+                        <a href="games/elden-ring.html" class="button neon-button">Read Reviews</a>
+                    </div>
+                    <div class="game-card small">
+                        <img src="https://images.unsplash.com/photo-1534423861386-85a16f5d13fd" alt="Game 3">
+                        <div class="rating">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star empty">★</span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-    </main>
-
-    <footer class="bg-black text-light py-4 mt-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <h5 class="gradient-text">GameReviews</h5>
-                    <p>Your trusted source for game reviews and ratings</p>
+        <section class="customer-section">
+            <h2>Customer Reviews</h2>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="rating">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <p class="review-text">"Amazing game! The graphics and gameplay are outstanding."</p>
+                        <span class="review-date">March 13, 2024</span>
+                    </div>
                 </div>
-                <div class="col-md-6 text-md-end">
-                    <p>&copy; 2024 GameReviews. All rights reserved.</p>
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="rating">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star empty">★</span>
+                        </div>
+                        <p class="review-text">"Great story and characters, but could use some polish."</p>
+                        <span class="review-date">March 12, 2024</span>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
