@@ -4,48 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GameReviews - Your Gaming Community</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar">
         <div class="container">
-            <a class="logo neon-text" href="index.html">GameReviews</a>
-            <button class="menu-toggle" aria-label="Toggle navigation">
-                <span class="menu-icon"></span>
-            </button>
             <div class="nav-left">
                 <a class="logo neon-text" href="index.html">STORE</a>
             </div>
             <div class="nav-menu">
                 <ul class="nav-list">
-                    <li><a class="nav-link" href="pages/action.html">Action</a></li>
-                    <li><a class="nav-link" href="pages/rpg.html">RPG</a></li>
-                    <li><a class="nav-link" href="pages/strategy.html">Strategy</a></li>
-                    <li><a class="nav-link" href="pages/sports.html">Sports</a></li>
                     <li><a class="nav-link" href="#">ABOUT</a></li>
                     <li><a class="nav-link" href="#">CONTACT</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    <header class="hero-section">
-        <div class="container">
-            <h1 class="title gradient-text">Welcome to GameReviews</h1>
-            <p class="subtitle">Discover your next gaming adventure</p>
-        </div>
-    </header>
+
     <main class="container">
-        <h2 class="section-title gradient-text">Game Categories</h2>
-        <div class="grid">
-            <!-- Action Games -->
-            <div class="game-card">
-                <img src="https://images.unsplash.com/photo-1486572788966-cfd3df1f5b42" alt="Action Games">
-                <div class="card-content">
-                    <h5 class="card-title">Action Games</h5>
-                    <p class="card-text">Fast-paced adventures and intense combat</p>
-                    <a href="pages/action.html" class="button neon-button">Explore</a>
         <section class="featured-section">
             <div class="featured-main">
                 <div class="featured-game">
@@ -65,41 +41,6 @@
                     </div>
                 </div>
             </div>
-            <!-- RPG Games -->
-            <div class="game-card">
-                <img src="https://images.unsplash.com/photo-1594652634010-275456c808d0" alt="RPG Games">
-                <div class="card-content">
-                    <h5 class="card-title">RPG Games</h5>
-                    <p class="card-text">Epic stories and character development</p>
-                    <a href="pages/rpg.html" class="button neon-button">Explore</a>
-                </div>
-            </div>
-            <!-- Strategy Games -->
-            <div class="game-card">
-                <img src="https://images.unsplash.com/photo-1540898824226-21f19654dcf1" alt="Strategy Games">
-                <div class="card-content">
-                    <h5 class="card-title">Strategy Games</h5>
-                    <p class="card-text">Test your tactical thinking</p>
-                    <a href="pages/strategy.html" class="button neon-button">Explore</a>
-                </div>
-            </div>
-            <!-- Sports Games -->
-            <div class="game-card">
-                <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420" alt="Sports Games">
-                <div class="card-content">
-                    <h5 class="card-title">Sports Games</h5>
-                    <p class="card-text">Competitive sports action</p>
-                    <a href="pages/sports.html" class="button neon-button">Explore</a>
-                </div>
-            </div>
-        </div>
-        <section class="featured-games">
-            <h2 class="section-title gradient-text">Featured Games</h2>
-            <div class="featured-grid">
-                <div class="game-card featured">
-                    <img src="https://images.unsplash.com/photo-1522069213448-443a614da9b6" alt="Cyberpunk 2077">
-                    <div class="card-content">
-                        <h5 class="card-title">Cyberpunk 2077</h5>
             <div class="featured-sidebar">
                 <h3>Featured Games</h3>
                 <div class="featured-grid">
@@ -108,19 +49,11 @@
                         <div class="rating">
                             <span class="star">★</span>
                             <span class="star">★</span>
--8
-+2
+                            <span class="star">★</span>
                             <span class="star">★</span>
                             <span class="star empty">★</span>
                         </div>
-                        <p class="card-text">Experience the future in this open-world RPG</p>
-                        <a href="games/cyberpunk.html" class="button neon-button">Read Reviews</a>
                     </div>
-                </div>
-                <div class="game-card featured">
-                    <img src="https://images.unsplash.com/photo-1511213966740-24d719a0a814" alt="Elden Ring">
-                    <div class="card-content">
-                        <h5 class="card-title">Elden Ring</h5>
                     <div class="game-card small">
                         <img src="https://images.unsplash.com/photo-1511213966740-24d719a0a814" alt="Game 2">
                         <div class="rating">
@@ -128,9 +61,8 @@
                             <span class="star">★</span>
                             <span class="star">★</span>
                             <span class="star">★</span>
+                            <span class="star">★</span>
                         </div>
-                        <p class="card-text">Explore a vast fantasy world</p>
-                        <a href="games/elden-ring.html" class="button neon-button">Read Reviews</a>
                     </div>
                     <div class="game-card small">
                         <img src="https://images.unsplash.com/photo-1534423861386-85a16f5d13fd" alt="Game 3">
@@ -145,6 +77,7 @@
                 </div>
             </div>
         </section>
+
         <section class="customer-section">
             <h2>Customer Reviews</h2>
             <div class="reviews-grid">
@@ -175,3 +108,21 @@
                     </div>
                 </div>
             </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h5 class="gradient-text">GameReviews</h5>
+                    <p>Your trusted source for game reviews and ratings</p>
+                </div>
+                <div class="footer-copyright">
+                    <p>&copy; 2024 GameReviews. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
